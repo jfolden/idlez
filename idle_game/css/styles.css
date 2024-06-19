@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1e;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #2c2c2e;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}
+
+.sidebar h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #3a3a3c;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background-color: #4a4a4c;
+}
+
+.tab-icon {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    width: calc(100% - 220px);
+}
+
+.main-content h1 {
+    text-align: center;
+}
+
+.global-cast-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: calc(50% - 220px);
+    padding: 10px;
+    background-color: #0505ff00;
+    position: fixed;
+    top: 0;
+    left: 220px;
+    z-index: 1000;
+}
+
+.activity-label {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+
+.global-cast-bar-background {
+    width: 100%;
+    background-color: #9b9b9bda;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+#global-cast-bar {
+    background-color: #00af26;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    transition: width 0.25s linear;
+    transition-timing-function: linear;
+}
+
+#global-cast-bar-label {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    /* width: 100%; */
+}
+
+#stop-gathering {
+    margin-left: 10px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content h2 {
+    color: #ffffff;
+}
+
+#content > div {
+    display: none;
+}
+
+#content > div:first-child {
+    display: block;
+}
+
+.material {
+    margin: 20px 0;
+}
+
+.material p {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* .cast-bar {
+    width: 0;
+    height: 20px;
+    background-color: #4caf50;
+    margin-top: 10px;
+    transition: width 0.1s linear;
+} */

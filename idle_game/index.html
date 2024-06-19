@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rust Wasm Idle Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <button class="tab" onclick="loadTab('mining')">
+                <img src="assets/pickaxe.png" alt="Mining" class="tab-icon"> Mining
+            </button>
+            <button class="tab" onclick="loadTab('fishing')">
+                <img src="assets/fish.png" alt="Fishing" class="tab-icon"> Fishing
+            </button>
+        </div>
+        <div class="main-content">
+            <div class="global-cast-bar-container">
+                <div id="activity-label" class="activity-label"></div>
+                <div class="global-cast-bar-background">
+                    <div id="global-cast-bar" class="progress-bar"></div>
+                    <div id="global-cast-bar-label" class="progress-bar-text"></div>
+                </div>
+                <button id="stop-gathering" onclick="stopGathering()">Stop</button>
+            </div>
+            <h1>Rust Wasm Idle Game</h1>
+            <div id="content">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
